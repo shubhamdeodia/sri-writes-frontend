@@ -1,5 +1,6 @@
+/* eslint-disable @typescript-eslint/no-explicit-any */
 import { Box, Button, Flex, Heading, Image, Stack } from '@chakra-ui/react';
-import { graphql, Link } from 'gatsby';
+import { graphql } from 'gatsby';
 import React, { ReactElement } from 'react';
 import { StrapiWriter } from '../types';
 
@@ -22,8 +23,14 @@ export const query = graphql`
     }
 `;
 
-export default function AboutMe({ data }): ReactElement {
-    const writer: StrapiWriter = data.strapiWriter;
+export default function AboutMe({
+    data
+}: {
+    data: {
+        strapiWriter: StrapiWriter;
+    };
+}): ReactElement {
+    const writer = data.strapiWriter;
 
     return (
         <Flex

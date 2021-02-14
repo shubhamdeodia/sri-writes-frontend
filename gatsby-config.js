@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'http://localhost:1337',
+                apiURL: 'https://srini-writes-strapi-backend.herokuapp.com/',
                 queryLimit: 1000, // Default to 100
                 contentTypes: ['article', 'category', 'writer'],
                 //If using single types place them in this array.
@@ -43,7 +43,7 @@ module.exports = {
                 short_name: `sri-writes`,
                 start_url: `/`,
                 display: `minimal-ui`,
-                icon: `${__dirname}/src/images/gatsby-icon.png`
+                icon: `${__dirname}/src/images/icon.png`
             }
         },
         {

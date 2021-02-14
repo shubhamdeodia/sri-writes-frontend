@@ -12,7 +12,7 @@ const SEO = (props) => {
 
     // Merge default and page-specific SEO values
     const fullSeo = { ...defaultSeo, ...props };
-    console.log('🚀 ~ SEO ~ fullSeo', fullSeo);
+
     const getMetaTags = () => {
         const tags = [];
 
@@ -108,14 +108,14 @@ SEO.propTypes = {
     author: PropTypes.string,
     keywords: PropTypes.string,
     description: PropTypes.string,
-    image: PropTypes.string,
+    shareImage: PropTypes.any,
     article: PropTypes.bool
 };
 
 SEO.defaultProps = {
     title: 'Homepage',
     description: 'I write about nature, tech and personal experiences',
-    image: null,
+    shareImage: null,
     author: 'Srinivas Laxman',
     keywords: 'Srini Blog, AWS Architecht, Srinivas Laxman',
     article: false

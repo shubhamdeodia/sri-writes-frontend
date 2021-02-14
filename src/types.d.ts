@@ -4681,6 +4681,7 @@ export enum StrapiHomepageFieldsEnum {
   SeoShareImageInternalType = 'seo___shareImage___internal___type',
   HeroId = 'hero___id',
   HeroTitle = 'hero___title',
+  HeroDescription = 'hero___description',
   StrapiId = 'strapiId'
 }
 
@@ -4710,11 +4711,13 @@ export type StrapiHomepageHero = {
   __typename?: 'StrapiHomepageHero';
   id?: Maybe<Scalars['Int']>;
   title?: Maybe<Scalars['String']>;
+  description?: Maybe<Scalars['String']>;
 };
 
 export type StrapiHomepageHeroFilterInput = {
   id?: Maybe<IntQueryOperatorInput>;
   title?: Maybe<StringQueryOperatorInput>;
+  description?: Maybe<StringQueryOperatorInput>;
 };
 
 export type StrapiHomepageSeo = {

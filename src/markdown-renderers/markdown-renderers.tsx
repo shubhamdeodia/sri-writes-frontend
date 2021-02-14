@@ -62,28 +62,6 @@ const renderers = () => {
                 </Box>
             );
         }
-        // heading: ({
-        //     children,
-        //     level
-        // }: {
-        //     children: React.ReactNode;
-        //     level: string;
-        // }): React.ReactElement => {
-        //     console.log(children);
-        //     console.log(level);
-        //     return (
-        //         <Box p={10}>
-        //             <Heading
-        //                 as={`h${level}`}
-        //                 opacity="0.8"
-        //                 fontWeight="bold"
-        //                 textAlign="center"
-        //             >
-        //                 {children}
-        //             </Heading>
-        //         </Box>
-        //     );
-        // }
     };
 };
 

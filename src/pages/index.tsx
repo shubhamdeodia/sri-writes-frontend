@@ -25,7 +25,7 @@ const IndexPage = (): React.ReactElement => {
             <SEO
                 title={strapiHomepage.seo?.metaTitle}
                 description={strapiHomepage.seo?.metaDescription}
-                image={strapiHomepage.seo?.shareImage?.publicURL}
+                shareImage={strapiHomepage.seo?.shareImage?.publicURL}
             />
             <Flex
                 justify="center"
@@ -34,8 +34,8 @@ const IndexPage = (): React.ReactElement => {
                 flex="1 0 auto"
             >
                 <Hero
-                    title={strapiHomepage.seo?.metaTitle}
-                    description={strapiHomepage.seo?.metaDescription}
+                    title={strapiHomepage.hero?.title}
+                    description={strapiHomepage.hero?.description}
                 />
                 <Articles
                     nextPage={nextPage}
@@ -54,6 +54,7 @@ const query = graphql`
         strapiHomepage {
             hero {
                 title
+                description
             }
             seo {
                 metaTitle
