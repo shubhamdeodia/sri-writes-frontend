@@ -28,7 +28,7 @@ const Layout = ({
                 direction="column"
                 align="center"
                 p="32px"
-                h={['auto', 'auto', '100%', '100%']}
+                h="auto"
                 maxW="1140px"
                 m="0 auto"
             >
