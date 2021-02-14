@@ -10,7 +10,7 @@ module.exports = {
         {
             resolve: `gatsby-source-strapi`,
             options: {
-                apiURL: 'https://srini-writes-strapi-backend.herokuapp.com',
+                apiURL: 'https://sri-writes-strapi-backend.herokuapp.com',
                 queryLimit: 1000, // Default to 100
                 contentTypes: ['article', 'category', 'writer'],
                 //If using single types place them in this array.
