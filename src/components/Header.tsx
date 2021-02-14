@@ -76,7 +76,6 @@ const Header: React.FC = (props): React.ReactElement => {
             wrap="wrap"
             w="100%"
             mb={8}
-            p={8}
             {...props}
         >
             <Flex align="center">
@@ -108,7 +107,7 @@ const Header: React.FC = (props): React.ReactElement => {
                     direction={['column', 'row', 'row', 'row']}
                     pt={[4, 4, 0, 0]}
                 >
-                    <MenuItem to="writers/srinivas-laxman">About Me</MenuItem>
+                    <MenuItem to="/writers/srinivas-laxman">About Me</MenuItem>
                 </Flex>
             </Box>
         </Flex>

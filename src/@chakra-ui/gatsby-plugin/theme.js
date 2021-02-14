@@ -34,9 +34,9 @@ const styles = {
             flexDirection: 'column',
             color: props.colorMode === 'dark' ? 'gray.400' : 'gray.600'
         },
-        // '#gatsby-focus-wrapper': {
-        //     height: '90%'
-        // },
+        '#gatsby-focus-wrapper': {
+            height: '100%'
+        },
         a: {
             cursor: 'pointer',
             color: props.colorMode === 'dark' ? '#0EBE6F' : '#0CA25F'

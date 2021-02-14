@@ -18,7 +18,6 @@ export default function Hero({
             direction={{ base: 'column', md: 'row' }}
             wrap="nowrap"
             minH="100px"
-            px={8}
             pb={4}
             mb={8}
         >
