@@ -1,3 +1,5 @@
+/* eslint-disable sonarjs/no-identical-functions */
+/* eslint-disable max-lines-per-function */
 /* eslint-disable @typescript-eslint/ban-ts-comment */
 /* eslint-disable react/no-children-prop */
 /* eslint-disable react/display-name */
@@ -20,7 +22,14 @@ const renderers = () => {
             value: React.ReactNode | string;
         }): React.ReactElement => {
             return (
-                <Box p="10px">
+                <Box
+                    fontSize={['md', 'md', 'lg', 'xl']}
+                    m="0"
+                    p={2}
+                    w="100%"
+                    maxW="1140px"
+                    overflow="auto"
+                >
                     <SyntaxHighlighter
                         style={dracula}
                         language={language}
@@ -31,7 +40,7 @@ const renderers = () => {
         },
         image: ({ src, alt }: { src: string; alt: string }) => {
             return (
-                <Box mb={10}>
+                <Box p={2} mb={10}>
                     <Image
                         src={src}
                         size="100%"
@@ -48,17 +57,56 @@ const renderers = () => {
             children: React.ReactNode;
         }): React.ReactElement => {
             return (
-                <Box p={3}>
+                <Box p={2}>
                     <Heading
                         as="p"
-                        size="md"
+                        fontSize={['md', 'md', 'lg', 'lg']}
                         opacity="0.8"
                         fontWeight="normal"
                         lineHeight={1.5}
-                        textAlign={['center', 'center', 'left', 'left']}
                     >
                         {children}
                     </Heading>
+                </Box>
+            );
+        },
+        heading: ({
+            children
+        }: {
+            children: React.ReactNode;
+        }): React.ReactElement => {
+            return <Box p={2}>{children}</Box>;
+        },
+        html: ({
+            children
+        }: {
+            children: React.ReactNode;
+        }): React.ReactElement => {
+            return (
+                <Box w="100%" p={2}>
+                    {children}
+                </Box>
+            );
+        },
+        virtualHtml: ({
+            children
+        }: {
+            children: React.ReactNode;
+        }): React.ReactElement => {
+            return (
+                <Box w="100%" p={2}>
+                    {children}
+                </Box>
+            );
+        },
+        parsedHtml: ({
+            children
+        }: {
+            children: React.ReactNode;
+        }): React.ReactElement => {
+            return (
+                <Box w="100%" p={2}>
+                    {children}
                 </Box>
             );
         }

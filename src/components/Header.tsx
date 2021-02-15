@@ -9,7 +9,8 @@ import {
     Text,
     useColorModeValue,
     useColorMode,
-    IconButton
+    IconButton,
+    Tooltip
 } from '@chakra-ui/react';
 import { FaMoon, FaSun } from 'react-icons/fa';
 import { GiHamburgerMenu } from 'react-icons/gi';
@@ -78,19 +79,25 @@ const Header: React.FC = (props): React.ReactElement => {
             mb={8}
             {...props}
         >
-            <Flex align="center">
-                <Logo w="120px" />
-            </Flex>
             <Flex>
-                <IconButton
-                    size="md"
-                    fontSize="lg"
+                <Tooltip
+                    label={`Switch to ${text} mode`}
                     aria-label={`Switch to ${text} mode`}
-                    variant="ghost"
-                    ml={{ base: '0', md: '3' }}
-                    onClick={toggleMode}
-                    icon={<SwitchIcon />}
-                />
+                >
+                    <IconButton
+                        size="md"
+                        fontSize="lg"
+                        aria-label={`Switch to ${text} mode`}
+                        variant="ghost"
+                        ml={{ base: '0', md: '3' }}
+                        onClick={toggleMode}
+                        icon={<SwitchIcon />}
+                    />
+                </Tooltip>
+            </Flex>
+
+            <Flex align="center" order={0}>
+                <Logo w="120px" />
             </Flex>
 
             <Box display={{ base: 'block', md: 'none' }} onClick={toggleMenu}>
@@ -105,6 +112,7 @@ const Header: React.FC = (props): React.ReactElement => {
                     align="center"
                     justify={['center', 'flex-end', 'flex-end', 'flex-end']}
                     direction={['column', 'row', 'row', 'row']}
+                    fontSize="md"
                     pt={[4, 4, 0, 0]}
                 >
                     <MenuItem to="/writers/srinivas-laxman">About Me</MenuItem>

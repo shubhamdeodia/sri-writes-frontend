@@ -59,7 +59,12 @@ export default function ArticleCard({
                     </Heading>
                 </Box>
 
-                <Stack isInline justify="flex-end" align="baseline">
+                <Stack
+                    isInline
+                    justify="flex-end"
+                    fontSize="md"
+                    align="baseline"
+                >
                     <Link to={`article/${article.slug}`}>Read More...</Link>
                 </Stack>
             </Box>

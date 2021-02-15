@@ -20,8 +20,9 @@ const config = {
 };
 
 const fonts = {
-    body: 'source sans pro',
-    heading: 'source sans pro'
+    body: 'system-ui, source sans pro',
+    heading: 'source sans pro',
+    mono: 'Menlo, monospace'
 };
 
 const styles = {

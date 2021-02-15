@@ -26,9 +26,10 @@ const Layout = ({
         render={() => (
             <Flex
                 direction="column"
-                align="center"
+                textAlign={['center', 'center', 'left', 'left']}
                 p="32px"
                 h="auto"
+                fontSize={['md', 'md', 'lg', 'xl']}
                 maxW="1140px"
                 m="0 auto"
             >

@@ -86,7 +86,7 @@ const Article: React.FC<ArticleProps> = ({ data }) => {
                     </Heading>
                 </Stack>
                 <Box
-                    w={{ base: '90%', sm: '80%', md: '70%' }}
+                    w={{ base: '100%', sm: '80%', md: '70%' }}
                     mb={{ base: 12, md: 0 }}
                 >
                     <Image
@@ -110,6 +110,7 @@ const Article: React.FC<ArticleProps> = ({ data }) => {
                     {article.description}
                 </Heading>
             </Stack>
+
             <ReactMarkdown
                 source={article.content || 'no-content'}
                 renderers={ChakraUIRenderer(renderers())}

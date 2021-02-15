@@ -71,7 +71,7 @@ const Articles: React.FC<ArticlesProps> = ({
                 />
             </Flex>
 
-            <Box maxW="100%">
+            <Box maxW="100%" fontSize={['md', 'md', 'lg', 'lg']}>
                 <Grid
                     templateColumns={[
                         '1fr',
