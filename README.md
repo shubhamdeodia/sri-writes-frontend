@@ -1,5 +1,9 @@
 # Blog UI created for my friend
 
+## 💫 Deploy
+
+[![Netlify Status](https://api.netlify.com/api/v1/badges/11decbde-3ede-4242-8462-f52a2e1f98d3/deploy-status)](https://app.netlify.com/sites/zealous-mahavira-1f480d/deploys)
+
 ## 🚀 Build Using
 
 Typescript
@@ -68,8 +72,6 @@ A quick look at the top-level files and directories you'll see in a Gatsby proje
 
 12. **`README.md`**: A text file containing useful reference information about your project.
 
-## 💫 Deploy
 
-[![Netlify Status](https://api.netlify.com/api/v1/badges/11decbde-3ede-4242-8462-f52a2e1f98d3/deploy-status)](https://app.netlify.com/sites/zealous-mahavira-1f480d/deploys)
 
 <!-- AUTO-GENERATED-CONTENT:END -->
