@@ -10,6 +10,14 @@ require('ts-node').register({
 
 exports.createPages = require('./createPages').createPages;
 
+exports.onCreateWebpackConfig = ({ getConfig, actions }) => {
+    if (getConfig().mode === 'production') {
+        actions.setWebpackConfig({
+            devtool: false
+        });
+    }
+};
+
 module.exports.onCreateNode = async ({ node, actions, createNodeId }) => {
     const crypto = require(`crypto`);
 
