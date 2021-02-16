@@ -1,20 +1,10 @@
-import {
-    Badge,
-    Box,
-    Button,
-    Flex,
-    GridItem,
-    Heading,
-    Image,
-    Stack,
-    Text
-} from '@chakra-ui/react';
+import { Badge, Box, Heading, Stack, Text } from '@chakra-ui/react';
 import { format } from 'date-fns';
-import { graphql, Link, useStaticQuery } from 'gatsby';
+import { Link } from 'gatsby';
 import Img from 'gatsby-image';
 import React, { ReactElement } from 'react';
 import { StrapiArticle } from '../types';
-import { BiRightArrowAlt } from 'react-icons/bi';
+
 export interface ArticleCardProps {
     article: StrapiArticle;
 }
@@ -31,12 +21,14 @@ export default function ArticleCard({
             shadow="2xl"
         >
             <Box display="block" w="100%">
-                <Img
-                    style={{ height: '100%', width: '100%' }}
-                    imgStyle={{ objectFit: 'contain' }}
-                    fluid={article.image?.childImageSharp?.fluid}
-                    size="100%"
-                />
+                <Link to={`article/${article.slug}`}>
+                    <Img
+                        style={{ height: '100%', width: '100%' }}
+                        imgStyle={{ objectFit: 'contain' }}
+                        fluid={article.image?.childImageSharp?.fluid}
+                        size="100%"
+                    />
+                </Link>
             </Box>
 
             <Box p={5}>
