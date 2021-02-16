@@ -1,5 +1,5 @@
 {
-  "name": "srini-writes",
+  "name": "sri-writes-frontend",
   "private": true,
   "description": "Srini BLog",
   "version": "0.1.0",
@@ -52,7 +52,7 @@
   "keywords": [
     "gatsby"
   ],
-  "license": "0BSD",
+  "license": "MIT",
   "scripts": {
     "build": "gatsby build",
     "develop": "gatsby develop",
