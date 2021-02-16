@@ -1,13 +1,4 @@
-<!-- AUTO-GENERATED-CONTENT:START (STARTER) -->
-<p align="center">
-  <a href="https://www.gatsbyjs.com">
-    <img alt="Gatsby" src="https://www.gatsbyjs.com/Gatsby-Monogram.svg" width="60" />
-  </a>
-</p>
-<h1 align="center">
-  sri-writes-frontend
-</h1>
-
+# Blog UI created for my friend
 
 ## 🚀 Build Using
 
@@ -16,6 +7,12 @@ Typescript
 Gatsby
 
 Chakra-UI
+
+## 🚀 Screenshot
+
+![Light](./screenshot/Light.JPG "Light")
+
+![Dark](./screenshot/Dark.JPG "Dark")
 
 ## 🚀 Quick start
 
