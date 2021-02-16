@@ -51,9 +51,7 @@ const SEO = (props) => {
             });
         }
         if (fullSeo.shareImage) {
-            const imageUrl =
-                (process.env.GATSBY_ROOT_URL || 'http://localhost:8000') +
-                fullSeo.shareImage.publicURL;
+            const imageUrl = fullSeo.shareImage.publicURL;
             tags.push(
                 {
                     name: 'image',
